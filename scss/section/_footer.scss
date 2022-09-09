@@ -1,0 +1,44 @@
+.footer {
+    width: 100vw;
+    background-color: $colorFooter;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.iconos {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+.iconos ul {
+    display: flex;
+}
+
+.redes li {
+    display: flex;
+    padding: 20px;
+}
+
+.redes li a img {
+    height: 4rem;
+}
+
+.contenedorContacto {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1em;
+    line-height: 3.2vh;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Lato', sans-serif;
+}

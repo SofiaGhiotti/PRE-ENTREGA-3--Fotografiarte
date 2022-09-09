@@ -1,0 +1,179 @@
+@import "./variables/generales";
+@import "./variables/extend";
+
+@import "./section/header_Index";
+@import "./section/footer";
+@import "./section/header_paginas";
+@import "./section/mainCIUDADES";
+@import "./section/mainCONTACTO";
+@import "./section/mainNATURALEZA";
+@import "./section/mainSESIONES";
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+
+.row {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.nav-link {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Lato', sans-serif;
+    @include titulos;
+}
+
+
+.fotos {
+    width: 100vw;
+}
+
+.fotos li a img {
+    width: 18rem;
+    height: 15rem;
+    border-radius: 25px;
+}
+
+.fotos a img:hover{
+    background-color: rgba(255, 255, 255, 0.582);
+}
+
+.titulos {
+    display: flex;
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+
+@media (max-width: 991px) {
+    .row {
+        width: 100vw;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .centro {
+        align-items: center;
+    }
+
+    .navbar-nav {
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .pagContactos {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .formulario {
+        width: 100vw;
+    }
+
+    .contenido {
+        height: 100vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    /* PAG CIUDADES */
+
+    .contenidoCiudades {
+        height: 100%;
+    }
+
+    .ciudades {
+        height: 110vh;
+    }
+
+    .ciudades ul {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fotos {
+        height: 100vh;
+    }
+
+    .fotos li a img {
+        width: 15rem;
+        height: 12rem;
+        border-radius: 25px;
+    }
+
+    .titulos {
+        display: flex;
+        font-size: 3em;
+        text-align: center;
+        margin: 20px;
+    }
+
+    /* PAG NATURALEZA */
+    .naturaleza{
+        height: 100vh;
+        width: 98vw;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    /* PAG SESIONES */
+    .sesiones {
+        height: 100vh;
+    }
+    
+}
+@media (max-width: 576px) {
+    .contenidoCiudades{
+        height: 110vh;
+    }
+    .naturaleza .fotos img {
+        width: 12em;
+        height: 10em;
+        margin: 15px;
+    }
+    .sesiones .fotos img {
+        width: 12em;
+        height: 10em;
+    }
+
+    .ciudades .fotos img {
+        width: 12em;
+        height: 10em;
+    }
+
+}

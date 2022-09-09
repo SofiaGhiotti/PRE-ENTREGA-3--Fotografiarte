@@ -1,0 +1,13 @@
+//EXTEND
+%mainPrincipal {
+    display: flex;
+    height: 75vh;
+    background-image: $degrade;
+}
+
+//MIXIN
+@mixin titulos {
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 5vh;
+}

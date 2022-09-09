@@ -1,0 +1,14 @@
+.headerPaginas {
+    display: flex;
+    background-image: url(../imagen/flores.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    height: 75vh;
+    background-image: $degrade;
+}

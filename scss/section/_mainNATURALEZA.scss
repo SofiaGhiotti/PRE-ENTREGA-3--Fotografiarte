@@ -1,0 +1,21 @@
+/* PAG NATURALEZA */
+.naturaleza{
+    width: 100vw;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    @extend %mainPrincipal;
+}
+.naturaleza ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.naturaleza .fotos img {
+    width: 15em;
+    height: 13em;
+    border-radius: 25px;
+}
