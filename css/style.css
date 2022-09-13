@@ -2,34 +2,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Dancing+Script:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato:ital,wght@0,400;1,300;1,400&display=swap");
 /* colores */
-.naturaleza {
+.ciudades h2, .mail h2, .naturaleza h2 {
   display: flex;
-  height: 75vh;
-  background-image: linear-gradient(182deg, #fad7a1b5 19%, #f9b2b599 100%); }
+  text-align: center;
+  font-family: 'Dancing Script', cursive; }
 
-.index {
-  width: 98vw;
+.header {
+  width: 100vw;
   height: auto;
   background-image: url(../imagen/flores.jpg);
   background-size: cover;
   padding: 200px 10px; }
-
-.centro {
-  width: 70vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  .header__centro {
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  .header__tituloPrincipal {
+    font-size: 9em;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
 
 .transparencia {
-  background-color: rgba(255, 255, 255, 0.582); }
-
-h1 {
-  font-size: 7em;
-  font-family: 'Dancing Script', cursive;
+  padding: 10px;
+  width: 101vw;
+  background-color: rgba(255, 255, 255, 0.582);
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-around; }
 
 .footer {
   width: 100vw;
@@ -45,16 +48,14 @@ h1 {
   flex-wrap: nowrap;
   align-items: center;
   flex-direction: column; }
-
-.iconos ul {
-  display: flex; }
+  .iconos ul {
+    display: flex; }
 
 .redes li {
   display: flex;
   padding: 20px; }
-
-.redes li a img {
-  height: 4rem; }
+  .redes li a img {
+    height: 4rem; }
 
 .contenedorContacto {
   display: flex;
@@ -70,69 +71,88 @@ h3 {
   font-family: 'Lato', sans-serif; }
 
 .headerPaginas {
-  display: flex;
+  width: 100vw;
+  height: auto;
   background-image: url(../imagen/flores.jpg);
   background-size: cover;
   display: flex;
-  align-items: center; }
-
-.contenido {
-  display: flex;
-  align-items: center;
-  height: 75vh;
-  background-image: linear-gradient(182deg, #fad7a1b5 19%, #f9b2b599 100%); }
-
-/* PAG CIUDADES */
-.contenidoCiudades {
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-evenly; }
+  padding: 10px; }
+  .headerPaginas__centro {
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
 
+/* PAG CIUDADES */
 .ciudades {
-  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center; }
+  .ciudades ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around; }
+  .ciudades h2 {
+    margin: 20px;
+    font-size: 40px; }
+  .ciudades .fotos img {
+    width: 20em;
+    height: 15em;
+    border-radius: 25px;
+    margin: 22px; }
+
+/* PAG CONTACTO */
+.contenido {
+  height: auto;
+  padding: 30px;
+  background-image: linear-gradient(182deg, #fad7a1b5 19%, #f9b2b599 100%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center; }
+
+.mail {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  flex-wrap: nowrap; }
+  flex-wrap: wrap; }
+  .mail h2 {
+    font-size: 40px; }
+  .mail .correos {
+    font-size: 2em;
+    list-style-type: circle; }
 
-.ciudades ul {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-content: space-around; }
-
-/* PAG CONTACTO */
 .formulario {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-.mail {
+/* PAG NATURALEZA */
+.naturaleza {
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-/* PAG NATURALEZA */
-.naturaleza {
-  width: 100vw;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-evenly; }
-
-.naturaleza ul {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-content: space-around; }
-
-.naturaleza .fotos img {
-  width: 15em;
-  height: 13em;
-  border-radius: 25px; }
+  .naturaleza ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around; }
+  .naturaleza h2 {
+    margin: 20px;
+    font-size: 40px; }
+  .naturaleza .fotos img {
+    width: 15em;
+    height: 13em;
+    border-radius: 25px;
+    margin: 10px; }
 
 /* PAG SESIONES */
 .sesiones {
@@ -157,53 +177,53 @@ h3 {
 ul {
   list-style-type: none; }
 
-.row {
+.organizacion {
   height: 50%;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   padding: 10px; }
 
 .nav-link {
-  color: black;
-  font-size: 16px;
-  font-weight: 500; }
+  color: #5f5a5a;
+  font-size: 20px;
+  font-weight: 450px;
+  margin: 0px 25px; }
+
+.navbar a:hover {
+  border-radius: 10px;
+  background-color: rgba(105, 105, 105, 0.274); }
 
 h2 {
   font-family: 'Comfortaa', cursive;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   font-size: 1em;
-  line-height: 5vh; }
+  line-height: 5vh;
+  text-align: center; }
 
-.fotos {
-  width: 100vw; }
-
-.fotos li a img {
-  width: 18rem;
-  height: 15rem;
-  border-radius: 25px; }
-
-.fotos a img:hover {
-  background-color: rgba(255, 255, 255, 0.582); }
-
-.titulos {
+.contenidoPaginas {
+  width: 100vw;
+  height: auto;
+  padding: 30px;
+  background-image: linear-gradient(182deg, #fad7a1b5 19%, #f9b2b599 100%);
   display: flex;
-  font-size: 4em;
-  text-align: center;
-  font-family: 'Dancing Script', cursive; }
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around; }
 
 @media (max-width: 991px) {
-  .row {
-    width: 100vw;
+  .organizacion {
+    height: auto;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center; }
-  .centro {
+  .header__centro {
     align-items: center; }
+  .header__tituloPrincipal {
+    font-size: 7em; }
   .navbar-nav {
     align-items: center; }
-  h1 {
-    font-size: 5em; }
   .navbar > .container,
   .navbar > .container-fluid,
   .navbar > .container-lg,
@@ -214,56 +234,24 @@ h2 {
     flex-direction: column;
     flex-wrap: nowrap; }
   .pagContactos {
-    height: 100vh;
     flex-direction: column;
     justify-content: space-around; }
-  .formulario {
-    width: 100vw; }
   .contenido {
-    height: 100vh;
+    height: auto;
+    padding: 30px;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around; }
-  /* PAG CIUDADES */
-  .contenidoCiudades {
-    height: 100%; }
-  .ciudades {
-    height: 110vh; }
-  .ciudades ul {
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center; }
-  .fotos {
-    height: 100vh; }
-  .fotos li a img {
-    width: 15rem;
-    height: 12rem;
-    border-radius: 25px; }
-  .titulos {
-    display: flex;
-    font-size: 3em;
-    text-align: center;
-    margin: 20px; }
-  /* PAG NATURALEZA */
-  .naturaleza {
-    height: 100vh;
-    width: 98vw;
-    flex-wrap: nowrap;
-    align-items: center; }
-  /* PAG SESIONES */
-  .sesiones {
-    height: 100vh; } }
+    .contenido .correos {
+      font-size: 24px;
+      justify-content: center; }
+    .contenido .formulario {
+      padding: 20px; } }
 
-@media (max-width: 576px) {
-  .contenidoCiudades {
-    height: 110vh; }
-  .naturaleza .fotos img {
-    width: 12em;
-    height: 10em;
-    margin: 15px; }
-  .sesiones .fotos img {
-    width: 12em;
-    height: 10em; }
-  .ciudades .fotos img {
-    width: 12em;
-    height: 10em; } }
+@media (max-width: 768px) {
+  .header__tituloPrincipal {
+    font-size: 5em; }
+  .footer {
+    padding: 10px;
+    flex-direction: column;
+    flex-wrap: wrap; } }

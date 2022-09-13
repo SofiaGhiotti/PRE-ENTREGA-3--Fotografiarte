@@ -1,8 +1,13 @@
 //EXTEND
 %mainPrincipal {
-    display: flex;
     height: 75vh;
     background-image: $degrade;
+}
+%titulosPaginas {
+    display: flex;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+
 }
 
 //MIXIN

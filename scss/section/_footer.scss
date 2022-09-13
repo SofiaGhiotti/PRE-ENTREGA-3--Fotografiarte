@@ -13,20 +13,20 @@
     flex-wrap: nowrap;
     align-items: center;
     flex-direction: column;
+    ul {
+        display: flex;
+    }
 }
 
-.iconos ul {
-    display: flex;
-}
 
 .redes li {
     display: flex;
     padding: 20px;
+    a img {
+        height: 4rem;
+    }
 }
 
-.redes li a img {
-    height: 4rem;
-}
 
 .contenedorContacto {
     display: flex;

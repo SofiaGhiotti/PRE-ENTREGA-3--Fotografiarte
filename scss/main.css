@@ -1,0 +1,323 @@
+/* tipografias */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato:ital,wght@0,400;1,300;1,400&display=swap");
+/* colores */
+.naturaleza {
+  display: flex;
+  height: 75vh;
+  background-image: linear-gradient(182deg, rgba(250, 215, 161, 0.7098039216) 19%, rgba(249, 178, 181, 0.6) 100%);
+}
+
+.index {
+  width: 98vw;
+  height: auto;
+  background-image: url(../imagen/flores.jpg);
+  background-size: cover;
+  padding: 200px 10px;
+}
+
+.centro {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.transparencia {
+  background-color: rgba(255, 255, 255, 0.582);
+}
+
+h1 {
+  font-size: 7em;
+  font-family: "Dancing Script", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  width: 100vw;
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.iconos {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+}
+
+.iconos ul {
+  display: flex;
+}
+
+.redes li {
+  display: flex;
+  padding: 20px;
+}
+
+.redes li a img {
+  height: 4rem;
+}
+
+.contenedorContacto {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1em;
+  line-height: 3.2vh;
+  font-family: "Comfortaa", cursive;
+  font-family: "Lato", sans-serif;
+}
+
+.headerPaginas {
+  display: flex;
+  background-image: url(../imagen/flores.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.contenido {
+  display: flex;
+  align-items: center;
+  height: 75vh;
+  background-image: linear-gradient(182deg, rgba(250, 215, 161, 0.7098039216) 19%, rgba(249, 178, 181, 0.6) 100%);
+}
+
+/* PAG CIUDADES */
+.contenidoCiudades {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ciudades {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.ciudades ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+/* PAG CONTACTO */
+.formulario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* PAG NATURALEZA */
+.naturaleza {
+  width: 100vw;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.naturaleza ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.naturaleza .fotos img {
+  width: 15em;
+  height: 13em;
+  border-radius: 25px;
+}
+
+/* PAG SESIONES */
+.sesiones {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.sesiones ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.row {
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.nav-link {
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: "Comfortaa", cursive;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 5vh;
+}
+
+.fotos {
+  width: 100vw;
+}
+
+.fotos li a img {
+  width: 18rem;
+  height: 15rem;
+  border-radius: 25px;
+}
+
+.fotos a img:hover {
+  background-color: rgba(255, 255, 255, 0.582);
+}
+
+.titulos {
+  display: flex;
+  font-size: 4em;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+
+@media (max-width: 991px) {
+  .row {
+    width: 100vw;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .centro {
+    align-items: center;
+  }
+  .navbar-nav {
+    align-items: center;
+  }
+  h1 {
+    font-size: 5em;
+  }
+  .navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .pagContactos {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .formulario {
+    width: 100vw;
+  }
+  .contenido {
+    height: 100vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  /* PAG CIUDADES */
+  .contenidoCiudades {
+    height: 100%;
+  }
+  .ciudades {
+    height: 110vh;
+  }
+  .ciudades ul {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fotos {
+    height: 100vh;
+  }
+  .fotos li a img {
+    width: 15rem;
+    height: 12rem;
+    border-radius: 25px;
+  }
+  .titulos {
+    display: flex;
+    font-size: 3em;
+    text-align: center;
+    margin: 20px;
+  }
+  /* PAG NATURALEZA */
+  .naturaleza {
+    height: 100vh;
+    width: 98vw;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  /* PAG SESIONES */
+  .sesiones {
+    height: 100vh;
+  }
+}
+@media (max-width: 576px) {
+  .contenidoCiudades {
+    height: 110vh;
+  }
+  .naturaleza .fotos img {
+    width: 12em;
+    height: 10em;
+    margin: 15px;
+  }
+  .sesiones .fotos img {
+    width: 12em;
+    height: 10em;
+  }
+  .ciudades .fotos img {
+    width: 12em;
+    height: 10em;
+  }
+}/*# sourceMappingURL=main.css.map */

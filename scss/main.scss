@@ -10,7 +10,6 @@
 @import "./section/mainSESIONES";
 
 
-
 * {
     margin: 0;
     padding: 0;
@@ -20,67 +19,63 @@ ul{
     list-style-type: none;
 }
 
-.row {
+.organizacion {
     height: 50%;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     padding: 10px;
 }
 
 .nav-link {
-    color: black;
-    font-size: 16px;
-    font-weight: 500;
+    color: rgb(95, 90, 90);
+    font-size: 20px;
+    font-weight: 450px;
+    margin: 0px 25px;
+}
+
+.navbar a:hover{
+    border-radius: 10px;
+    background-color: rgba(105, 105, 105, 0.274);
 }
 
 h2 {
     font-family: 'Comfortaa', cursive;
     font-family: 'Lato', sans-serif;
     @include titulos;
-}
-
-
-.fotos {
-    width: 100vw;
-}
-
-.fotos li a img {
-    width: 18rem;
-    height: 15rem;
-    border-radius: 25px;
-}
-
-.fotos a img:hover{
-    background-color: rgba(255, 255, 255, 0.582);
-}
-
-.titulos {
-    display: flex;
-    font-size: 4em;
     text-align: center;
-    font-family: 'Dancing Script', cursive;
+}
+
+.contenidoPaginas {
+    width: 100vw;
+    height: auto;
+    padding: 30px;
+    background-image: $degrade;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 
-
-@media (max-width: 991px) {
-    .row {
-        width: 100vw;
+@media (max-width: 991px) { 
+    .organizacion {
+        height: auto;
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: center;
     }
-
-    .centro {
-        align-items: center;
+    .header {
+        &__centro {
+            align-items: center;
+        }
+        &__tituloPrincipal {
+            font-size: 7em;
+        }
     }
 
     .navbar-nav {
         align-items: center;
-    }
-
-    h1 {
-        font-size: 5em;
     }
 
     .navbar>.container,
@@ -95,85 +90,39 @@ h2 {
     }
 
     .pagContactos {
-        height: 100vh;
         flex-direction: column;
         justify-content: space-around;
-    }
-    .formulario {
-        width: 100vw;
     }
 
     .contenido {
-        height: 100vh;
+        height: auto;
+        padding: 30px;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: space-around;
-    }
-
-    /* PAG CIUDADES */
-
-    .contenidoCiudades {
-        height: 100%;
-    }
-
-    .ciudades {
-        height: 110vh;
-    }
-
-    .ciudades ul {
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .fotos {
-        height: 100vh;
-    }
-
-    .fotos li a img {
-        width: 15rem;
-        height: 12rem;
-        border-radius: 25px;
-    }
-
-    .titulos {
-        display: flex;
-        font-size: 3em;
-        text-align: center;
-        margin: 20px;
-    }
-
-    /* PAG NATURALEZA */
-    .naturaleza{
-        height: 100vh;
-        width: 98vw;
-        flex-wrap: nowrap;
-        align-items: center;
-    }
-
-    /* PAG SESIONES */
-    .sesiones {
-        height: 100vh;
+        .correos {
+            font-size: 24px;
+            justify-content: center;
+        }
+        .formulario{
+            padding: 20px;
+        }
     }
     
+     
 }
-@media (max-width: 576px) {
-    .contenidoCiudades{
-        height: 110vh;
-    }
-    .naturaleza .fotos img {
-        width: 12em;
-        height: 10em;
-        margin: 15px;
-    }
-    .sesiones .fotos img {
-        width: 12em;
-        height: 10em;
-    }
 
-    .ciudades .fotos img {
-        width: 12em;
-        height: 10em;
-    }
 
+@media (max-width: 768px){
+    .header {
+        &__tituloPrincipal {
+            font-size: 5em;
+        }
+    }
+    .footer {
+        padding: 10px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
 }

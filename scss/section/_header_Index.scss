@@ -1,27 +1,31 @@
-.index {
-    width: 98vw;
+.header {
+    width: 100vw;
     height: auto;
     background-image: url(../imagen/flores.jpg);
     background-size: cover;
     padding: 200px 10px;
-}
-
-.centro {
-    width: 70vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    &__centro {
+        width: 75vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__tituloPrincipal {
+        font-size: 9em;
+        font-family: 'Dancing Script', cursive;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .transparencia {
-    background-color: rgba(255, 255, 255, 0.582);
+    padding: 10px;
+    width: 101vw;
+    background-color: $transparente;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-h1 {
-    font-size: 7em;
-    font-family: 'Dancing Script', cursive;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
