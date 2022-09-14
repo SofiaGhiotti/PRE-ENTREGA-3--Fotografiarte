@@ -1,0 +1,21 @@
+.galeria {
+    height: auto;
+    padding: 30px;
+    background-image: $degrade;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    ul {
+        display: flex;
+    }
+    h2 {
+        margin: 20px;
+        font-size: 40px;
+        @extend %titulosPaginas 
+    }
+    .fotos img {
+        width: 100%;
+        margin: 0px;
+    }
+}

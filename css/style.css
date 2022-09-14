@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Dancing+Script:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato:ital,wght@0,400;1,300;1,400&display=swap");
 /* colores */
-.ciudades h2, .mail h2, .naturaleza h2 {
+.ciudades h2, .mail h2, .naturaleza h2, .sesiones h2, .galeria h2 {
   display: flex;
   text-align: center;
   font-family: 'Dancing Script', cursive; }
@@ -104,7 +104,13 @@ h3 {
     width: 20em;
     height: 15em;
     border-radius: 25px;
-    margin: 22px; }
+    margin: 22px;
+    object-fit: cover; }
+  .ciudades .fotos img:hover {
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    filter: opacity(0.5); }
 
 /* PAG CONTACTO */
 .contenido {
@@ -152,22 +158,58 @@ h3 {
     width: 15em;
     height: 13em;
     border-radius: 25px;
-    margin: 10px; }
+    margin: 10px 22px;
+    object-fit: cover; }
+  .naturaleza .fotos img:hover {
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    filter: opacity(0.5); }
 
 /* PAG SESIONES */
 .sesiones {
-  height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   flex-wrap: nowrap; }
+  .sesiones ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around; }
+  .sesiones h2 {
+    margin: 20px;
+    font-size: 40px; }
+  .sesiones .fotos img {
+    width: 15em;
+    height: 15em;
+    border-radius: 25px;
+    margin: 10px 22px;
+    object-fit: cover; }
+  .sesiones .fotos img:hover {
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    transition: all 0.5s ease-out;
+    filter: opacity(0.5); }
 
-.sesiones ul {
+.galeria {
+  height: auto;
+  padding: 30px;
+  background-image: linear-gradient(182deg, #fad7a1b5 19%, #f9b2b599 100%);
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-content: space-around; }
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .galeria ul {
+    display: flex; }
+  .galeria h2 {
+    margin: 20px;
+    font-size: 40px; }
+  .galeria .fotos img {
+    width: 100%;
+    margin: 0px; }
 
 * {
   margin: 0;
