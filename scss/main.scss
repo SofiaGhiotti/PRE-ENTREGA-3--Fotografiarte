@@ -8,7 +8,6 @@
 @import "./section/mainCONTACTO";
 @import "./section/mainNATURALEZA";
 @import "./section/mainSESIONES";
-@import "./section/galeriaNIÑOS";
 
 
 * {
@@ -54,8 +53,6 @@ h2 {
     background-image: $degrade;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 
@@ -108,9 +105,10 @@ h2 {
         .formulario{
             padding: 20px;
         }
+    } 
+    .sesiones {
+        height: auto;
     }
-    
-     
 }
 
 
@@ -124,6 +122,14 @@ h2 {
         padding: 10px;
         flex-direction: column;
         flex-wrap: wrap;
+    } 
+    .sesiones {
+        height: auto;
     }
-    
+    .ciudades {
+        .fotos img {
+            width: 22em;
+            height: 15em;
+        }
+    }
 }

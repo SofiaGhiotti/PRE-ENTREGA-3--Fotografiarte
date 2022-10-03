@@ -3,12 +3,14 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: stretch;
+    padding-bottom: 50px;
     ul {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
         align-content: space-around;
+        margin-left: -32px;
     }
     h2 {
         margin: 20px;
@@ -16,8 +18,8 @@
         @extend %titulosPaginas 
     }
     .fotos img {
-        width: 20em;
-        height: 15em;
+        width: 31em;
+        height: 21em;
         border-radius: 25px;
         margin: 22px;
         object-fit: cover;
