@@ -108,6 +108,7 @@ h2 {
     } 
     .sesiones {
         height: auto;
+        padding: 0px;
     }
 }
 
@@ -132,4 +133,65 @@ h2 {
             height: 15em;
         }
     }
+    .naturaleza {
+        .container {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 20vh 25vh 40vh 25vh 20vh;
+            grid-template-areas:
+            "foto1 foto2"
+            "foto3 foto3"
+            "foto4 foto4"
+            "foto5 foto6"
+            "foto7 foto8";
+            .foto1 {  
+                img {
+                    width: 40vw;
+                    height: 20vh;
+                }
+            }
+            .foto2 {  
+                img {
+                    width: 30vw;
+                    height: 20vh;
+                }
+            }
+            .foto3 {  
+                img {
+                    width: 55vw;
+                    height: 25vh;
+                }
+            }
+            .foto4 { 
+                img {
+                    width: 75vw;
+                    height: 37vh;
+                } 
+            }
+            .foto5 {  
+                img {
+                    width: 40vw;
+                    height: 23vh;
+                }
+            }
+            .foto6 {  
+                img {
+                    width: 30vw;
+                    height: 20vh;
+                } 
+            }
+            .foto7 { 
+                img {
+                    width: 35vw;
+                    height: 20vh;
+                }
+            }
+            .foto8 {  
+                img {
+                    width: 41vw;
+                    height: 20vh;
+                }
+            }
+        }
+    }
+      
 }

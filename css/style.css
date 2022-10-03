@@ -170,74 +170,74 @@ h3 {
     text-align: center;
     font-size: 40px;
     margin-bottom: 40px; }
+  .naturaleza img {
+    border-radius: 25px;
+    object-fit: cover; }
+  .naturaleza img:hover {
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    filter: opacity(0.5); }
   .naturaleza .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1.5fr;
     grid-template-rows: 25vh 50vh 25vh;
     grid-template-areas: "foto1 foto2 foto3" "foto4 foto4 foto5" "foto6 foto7 foto8";
-    justify-items: center;
     justify-content: center;
     align-items: center;
+    justify-items: center;
     column-gap: 20px;
     row-gap: 20px; }
-    .naturaleza .container .foto1 {
-      grid-area: foto1; }
-      .naturaleza .container .foto1 img {
-        width: 22vw;
-        height: 27vh;
-        background-size: cover; }
-    .naturaleza .container .foto2 {
-      grid-area: foto2; }
-      .naturaleza .container .foto2 img {
-        width: 17vw;
-        height: 25vh; }
-    .naturaleza .container .foto3 {
-      grid-area: foto3; }
-      .naturaleza .container .foto3 img {
-        width: 33vw;
-        height: 30vh; }
-    .naturaleza .container .foto4 {
-      grid-area: foto4; }
-      .naturaleza .container .foto4 img {
-        width: 44vw;
-        height: 50vh; }
-    .naturaleza .container .foto5 {
-      grid-area: foto5; }
-      .naturaleza .container .foto5 img {
-        width: 38vw;
-        height: 44vh; }
-    .naturaleza .container .foto6 {
-      grid-area: foto6; }
-      .naturaleza .container .foto6 img {
-        width: 18vw;
-        height: 26vh; }
-    .naturaleza .container .foto7 {
-      grid-area: foto7; }
-      .naturaleza .container .foto7 img {
-        width: 22vw;
-        height: 28vh; }
-    .naturaleza .container .foto8 {
-      grid-area: foto8; }
-      .naturaleza .container .foto8 img {
-        width: 32vw;
-        height: 31vh; }
-    .naturaleza .container img {
-      border-radius: 25px;
-      object-fit: cover; }
-    .naturaleza .container img:hover {
-      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
-      transform: scale(1.1);
-      transition: all 0.5s ease;
-      filter: opacity(0.5); }
+  .naturaleza .foto1 {
+    grid-area: foto1; }
+    .naturaleza .foto1 img {
+      width: 22vw;
+      height: 27vh; }
+  .naturaleza .foto2 {
+    grid-area: foto2; }
+    .naturaleza .foto2 img {
+      width: 17vw;
+      height: 25vh; }
+  .naturaleza .foto3 {
+    grid-area: foto3; }
+    .naturaleza .foto3 img {
+      width: 33vw;
+      height: 30vh; }
+  .naturaleza .foto4 {
+    grid-area: foto4; }
+    .naturaleza .foto4 img {
+      width: 44vw;
+      height: 50vh; }
+  .naturaleza .foto5 {
+    grid-area: foto5; }
+    .naturaleza .foto5 img {
+      width: 38vw;
+      height: 44vh; }
+  .naturaleza .foto6 {
+    grid-area: foto6; }
+    .naturaleza .foto6 img {
+      width: 18vw;
+      height: 26vh; }
+  .naturaleza .foto7 {
+    grid-area: foto7; }
+    .naturaleza .foto7 img {
+      width: 22vw;
+      height: 28vh; }
+  .naturaleza .foto8 {
+    grid-area: foto8; }
+    .naturaleza .foto8 img {
+      width: 32vw;
+      height: 31vh; }
 
 /* PAG SESIONES */
 .sesiones {
-  height: 70vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
-  align-items: stretch; }
+  align-items: stretch;
+  padding: 80px 0px; }
   .sesiones ul {
     display: flex;
     flex-direction: row;
@@ -336,7 +336,8 @@ h2 {
     .contenido .formulario {
       padding: 20px; }
   .sesiones {
-    height: auto; } }
+    height: auto;
+    padding: 0px; } }
 
 @media (max-width: 768px) {
   .header__tituloPrincipal {
@@ -349,4 +350,32 @@ h2 {
     height: auto; }
   .ciudades .fotos img {
     width: 22em;
-    height: 15em; } }
+    height: 15em; }
+  .naturaleza .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20vh 25vh 40vh 25vh 20vh;
+    grid-template-areas: "foto1 foto2" "foto3 foto3" "foto4 foto4" "foto5 foto6" "foto7 foto8"; }
+    .naturaleza .container .foto1 img {
+      width: 40vw;
+      height: 20vh; }
+    .naturaleza .container .foto2 img {
+      width: 30vw;
+      height: 20vh; }
+    .naturaleza .container .foto3 img {
+      width: 55vw;
+      height: 25vh; }
+    .naturaleza .container .foto4 img {
+      width: 75vw;
+      height: 37vh; }
+    .naturaleza .container .foto5 img {
+      width: 40vw;
+      height: 23vh; }
+    .naturaleza .container .foto6 img {
+      width: 30vw;
+      height: 20vh; }
+    .naturaleza .container .foto7 img {
+      width: 35vw;
+      height: 20vh; }
+    .naturaleza .container .foto8 img {
+      width: 41vw;
+      height: 20vh; } }
